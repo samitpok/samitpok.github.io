@@ -83,3 +83,18 @@
   .top-gap5{
       padding-top: 5px;
   }
+
+  ol {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  ol > li {
+        -moz-transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+   }
+
+.left-spacing{
+    margin-left:35px;
+}
