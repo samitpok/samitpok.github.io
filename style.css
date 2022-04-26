@@ -67,4 +67,27 @@
         .text-center{
             text-align:center;
         }
+
+        /* unvisited link */
+        .list-style a:link {
+            color: #152135;
+            text-decoration: none;
+        }
+
+
+        /* visited link */
+        .list-style a:visited {
+            color: #0e1829;
+        }
+
+        /* mouse over link */
+        .list-style a:hover {
+            color: #0e1829;
+            text-decoration: underline;
+        }
+
+        /* selected link */
+        .list-style a:active {
+            color: #0e1829;
+        }
     
