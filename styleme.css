@@ -1,0 +1,85 @@
+   table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  figure { 
+      display: inline-block;
+  }
+  body{
+      width:80%;
+      margin: 0 auto; /* Center the DIV horizontally */
+      padding-top: 60px;
+      padding-bottom: 40px;
+      font-family: sans-serif;
+  }
+  .text-center{
+      text-align: center;
+  }
+  .text-yellow-italic{
+      color: #d8aa01;
+      font-style: italic;
+  }
+  .text-yellow{
+      color: #d8aa01;
+  }
+  .text-red{
+      color: rgb(129, 8, 8);
+  }
+  .text-italic{
+      font-style: italic;
+  }
+
+  .description-text{
+      width: 41%;
+      text-align: justify;
+  }
+
+  /* unvisited link */
+  a:link {
+      color: #d8aa01;
+      text-decoration: none;
+  }
+
+
+  /* visited link */
+  a:visited {
+      color: #8c6e01;
+  }
+
+  /* mouse over link */
+  a:hover {
+      color: #8c6e01;
+      text-decoration: underline;
+  }
+
+  /* selected link */
+  a:active {
+      color: rgb(8, 8, 110);
+  }
+
+  
+
+  p::first-letter {
+      font-size: 1.5em;
+      line-height: 0.85;
+  }
+
+  ol > li::marker {
+      font-weight: bold;
+  }
+
+  .top-gap5{
+      padding-top: 5px;
+  }
