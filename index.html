@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"  content="samit pokharel">
+    <title>Home Page - Samit </title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        /* Add some padding on document's body to prevent the content
+        to go underneath the header and footer */
+        img {
+                border-radius: 50%;
+        }
+        body{        
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        .fixed-header, .fixed-footer{
+            width: 100%;
+            position: fixed;        
+            padding: 10px 0;
+        }
+        .fixed-header{
+            top: 0;
+            background: #fff;
+            color: #000000;
+        }
+        .fixed-footer{
+            bottom: 0;
+            background: #162136;
+            color: #fff;
+        }
+        @media (min-width: 1000px) {
+            .container{
+                width: 60%;
+                margin: 0 auto; /* Center the DIV horizontally */
+            }
+            /* CSS that should be displayed if width is equal to or less than 800px goes here */
+        }
+        @media (max-width: 1000px) {
+            .container{
+                width: 100%;
+                margin: 0 auto; /* Center the DIV horizontally */
+            }
+            /* CSS that should be displayed if width is equal to or less than 800px goes here */
+        }
+        nav a{
+            color: #152135;
+            text-decoration: none;
+            padding: 7px 25px;
+            display: inline-block;
+        }
+        .text-mute{
+            color:#c3c3c3;
+        }
+        .navy-text{
+            color: #152135;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a>
+                <img src="sampok1.png" alt="Avatar" style="width:150px"><br>
+                <span style="padding-left:17%;color:#12213e;font-family:cursive;"><b>Samit Pokharel</b></span>
+                </a>
+                <a id="homebtn" href="#" style="border-bottom: 2px solid #12213e;"><b>Assignments</b></a>
+                <a id="classinfobtn" href="#"><b>Class Info</b></a>
+                <a id="contactbtn" href="#" ><b>Contact</b></a>
+                
+                <!-- <img src="sampok1.png" alt="Avatar" style="width:200px"> -->
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        
+        <div id="home" style="padding-top:130px;padding-left:20%;">
+            <ul style="list-style-type:circle;">
+                <li style="padding-top:10px;"><a>My Homepage Lab</a></li>
+                <li style="padding-top:10px;" class="text-mute"><a>About Me Lab</a></li>
+                <li style="padding-top:10px;" class="text-mute"><a>Grades Exercises</a></li>
+                <li style="padding-top:10px;" class="text-mute"><a>HTML Forms Lab</a></li>
+                <li style="padding-top:10px;" class="text-mute"><a>Task List Lab</a></li>
+                <li style="padding-top:10px;" class="text-mute"><a>Decorate My Text</a></li>
+                <li style="padding-top:10px;" class="text-mute"><a>Bank Accounts Lab</a></li>
+                <li style="padding-top:10px;" class="text-mute"><a>Mouse Maze</a></li>
+                <li style="padding-top:10px;" class="text-mute"><a>Simple Calculator Lab</a></li>
+                <li style="padding-top:10px;" class="text-mute"><a>Number Quiz Lab</a></li>
+                <li style="padding-top:10px;" class="text-mute"><a>APOD Lab</a></li>
+                <li style="padding-top:10px;" class="text-mute"><a>Dictionary Project</a></li>
+            </ul>
+        </div>
+
+        <div id="classinfo" style="padding-top:130px;padding-left:21%;display:none;">
+            <p><b>CS472-2022-05A-05D</b></p>
+            <table>
+                <tr>
+                  <th></th>
+                  <th scope="col">Morning</th>
+                  <th scope="col">Afternoon</th>
+                </tr>
+                <tr>
+                  <th scope="row">Time</th>
+                  <td>10-11:45</td>
+                  <td>1:30-3</td>
+                </tr>
+              </table>
+        </div>
+
+        <div id="contact" style="padding-top:130px;padding-left:21%;display:none;">
+            <span style="font-family:cursive;"><b>Email</b></span> : <a href="mailto:samitpokharel@miu.edu" class="navy-text"><b>samitpokharel@miu.edu</b></a>
+        </div>
+        <b>
+            
+        </b>
+    </div>    
+    <div class="fixed-footer">        
+        <p style="text-align:center">Maharishi International University</p>  
+        <p style="text-align:center">1000 N 4th Street, Fairfield, IA 52557</p>
+        <p style="text-align:center">Copyright &copy; 2022 </p>      
+    </div>
+
+    <script>
+
+        const homeDiv = document.getElementById("home");
+        const contactDiv = document.getElementById("contact");
+        const classInfoDiv = document.getElementById("classinfo");
+
+        const btnHome = document.getElementById("homebtn");
+        const btnClassInfo = document.getElementById("classinfobtn");
+        const btnContact = document.getElementById("contactbtn");
+
+        btnContact.onclick = function () {
+            homeDiv.style.display = "none";
+            classInfoDiv.style.display="none";
+            contactDiv.style.display="block";
+
+            btnContact.style.borderBottom = "2px solid #12213e";
+            btnHome.style.border = "none";
+            btnClassInfo.style.border = "none";
+        };
+
+        btnClassInfo.onclick = function () {
+            homeDiv.style.display = "none";
+            contactDiv.style.display="none";
+            classInfoDiv.style.display="block";
+
+            btnContact.style.borderBottom = "none";
+            btnHome.style.border = "none";
+            btnClassInfo.style.borderBottom = "2px solid #12213e";
+        };
+
+        btnHome.onclick = function () {
+            homeDiv.style.display = "block";
+            classInfoDiv.style.display="none";
+            contactDiv.style.display="none";
+            btnHome.style.borderBottom = "2px solid #12213e";
+            btnContact.style.border = "none";
+            btnClassInfo.style.border = "none";
+        };
+
+      </script>
+</body>
+</html>
