@@ -1,0 +1,69 @@
+
+        /* Add some padding on document's body to prevent the content
+        to go underneath the header and footer */
+        img {
+                border-radius: 50%;
+        }
+        body{        
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        .fixed-header, .fixed-footer{
+            width: 100%;
+            position: fixed;        
+            padding: 10px 0;
+        }
+        .fixed-header{
+            top: 0;
+            background: #fff;
+            color: #000000;
+        }
+        .fixed-footer{
+            bottom: 0;
+            background: #162136;
+            color: #fff;
+        }
+        @media (min-width: 1000px) {
+            .container{
+                width: 60%;
+                margin: 0 auto; /* Center the DIV horizontally */
+            }
+            /* CSS that should be displayed if width is equal to or less than 800px goes here */
+        }
+        @media (max-width: 1000px) {
+            .container{
+                width: 100%;
+                margin: 0 auto; /* Center the DIV horizontally */
+            }
+            /* CSS that should be displayed if width is equal to or less than 800px goes here */
+        }
+        nav a{
+            color: #152135;
+            text-decoration: none;
+            padding: 7px 25px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .text-mute{
+            color:#c3c3c3;
+        }
+        .navy-text{
+            color: #152135;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+        .list-style{
+            padding-top:10px;
+        }
+
+        .text-center{
+            text-align:center;
+        }
+    
