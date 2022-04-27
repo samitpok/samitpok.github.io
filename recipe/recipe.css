@@ -72,6 +72,7 @@ abbr[title] {
     
     text-decoration: underline !important;
 }
+
 .linethrough-word{
     text-decoration: line-through;
 }
