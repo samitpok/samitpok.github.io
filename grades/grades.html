@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Grade</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div style="width:50%;margin:auto;">
+        <h1>Retrieve your grade</h1>
+
+        <form action="https://mumstudents.org/params.php">
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value="Test Name" required ><br>
+
+            <label for="sid">Student ID:</label><br>
+            <input type="text" id="sid" name="sid" value="1145" required ><br>
+
+            <label for="assignment">Choose a assignment to see its grade:</label>
+            <select id="assignment" name="assignment" required>
+                <option value="homepage">Home page</option>
+                <option value="aboutme">About me</option>
+                <option value="recipe">Recipe</option>
+                <option value="moviereview">Movie Review</option>
+                <option value="gradesexercise">Grades Excercise</option>
+            </select><br>
+
+            <p>Please select the entry:</p>
+              <input type="radio" id="feb" name="entry" value="feb" required>
+              <label for="feb">Febuary</label><br>
+              <input type="radio" id="april" name="entry" value="april">
+              <label for="april">April</label><br>
+              <input type="radio" id="august" name="entry" value="august">
+              <label for="august">August</label><br>
+              <input type="radio" id="november" name="entry" value="november">
+              <label for="november">November</label><br><br>
+
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement"> I agree that I'm not lying and looking up for my own grade.</label><br>
+
+            <input type="submit" value="Get Grade!">
+        </form> 
+    </div>
+    
+</body>
+</html>
