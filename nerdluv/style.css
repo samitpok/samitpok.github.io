@@ -1,0 +1,27 @@
+
+.legend{
+    background: white;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 12%), 0 4px 4px rgb(0 0 0 / 12%), 0 8px 8px rgb(0 0 0 / 12%), 0 16px 16px rgb(0 0 0 / 12%);
+}
+
+.fieldset{
+    background-color:#e0e1fe;
+    width:40%;
+    border-radius:15px;
+}
+.left-label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+  }
+
+  .small-input{
+      width:50px;
+  }
+
+  .signup-button{
+      background: pink;
+      color:black;
+      font-weight:bold;
+      font-size: 1.2em;
+  }

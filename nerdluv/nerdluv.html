@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
+    <title>Nerd Luv</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Nerd Luv</h1>
+
+    <form action="https://mumstudents.org/params.php">
+        <fieldset class="fieldset">
+            <legend class="legend">New User Signup:</legend>
+            <br><br>
+            <label for="name" class="left-label">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label class="left-label">Gender:</label>
+                      <input type="radio" id="male" name="gender" value="male" required>
+                      <label for="male">Male</label>
+                      <input type="radio" id="female" name="gender" value="female">
+                      <label for="female">Female</label><br><br>
+
+
+            <label for="age" class="left-label">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="ptype" class="left-label">Personality Type:</label>
+            <input type="text" id="ptype" name="ptype" required><a href="https://www.16personalities.com/personality-types" target="_blank">(Dont Know your type?)</a><br><br>
+
+            <label for="os" class="left-label">Favorite OS:</label>
+            <select id="os" name="os" required>
+                <option value="windows">Windows</option>
+                <option value="linux">linux</option>
+                <option value="mac">mac</option>
+            </select><br><br>
+
+            <label for="seekingage" class="left-label">Seeking age:</label>
+            <input class="small-input" type="number" id="seekingageto" name="seekingageto" placeholder="min" required> to
+            <input class="small-input" type="number" id="seekingagefor" name="seekingagefor" placeholder="max" required><br><br>
+
+            <input class="signup-button" type="submit" value="Sign Up">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
