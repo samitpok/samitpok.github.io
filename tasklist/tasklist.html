@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
+    <title>Task List</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <h2 class="heading">Task List</h2>
+        
+        <div class="column">
+            <label>Task</label><br>
+            <input type="text" name="task" id="task" class="text-input"><br><br>
+            <button onclick="addTask()"  class="button">Add Task</button><br><br>
+            <button onclick="clearTask()" class="button">Clear Tasks</button>
+        </div>
+        
+        <div class="column">
+            <label>Task List</label><br>
+            <textarea id="tasklist" rows="10" cols="40"></textarea>
+            
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <script src="tasklist.js"></script>
+   
+</body>
+</html>

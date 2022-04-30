@@ -1,0 +1,31 @@
+
+    .heading{
+        color: blue;
+        padding-left: 5%;
+    }
+
+    .column{
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding:5%;
+    }
+
+    .container{
+        width:50%;
+        margin: auto;
+        border: 2px solid blue;
+
+    }
+
+
+    .text-input{
+        width:100%;
+        display: block;
+    }
+
+    .button{
+        width:100%;
+        display: block;
+    }
+
