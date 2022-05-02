@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Exercises</title>
+    <link rel="stylesheet" href="javascriptexercises.css">
+    
+</head>
+<body>
+    <h1>Javascript Exercises</h1>
+    <hr>
+    
+    <div>
+        <div>
+            <b>1.</b> What is the difference between the following 2 statements?<br>
+            setTimeout(booyah, 2000);<br>
+            setTimeout(booyah(), 2000);<br><br>
+        </div>
+        <div>
+            <b>Answer:</b> setTimeout(booyah(), 2000) calls the function immediately, rather than waiting the 2000ms.<br>
+            In case of setTimeout(booyah, 2000) it waits for 2000ms before calling the function. When passing the function we don't use () at the end of the function.
+        </div>
+        <br>
+    </div>
+
+    <hr>
+
+    <div>
+        <div>
+            <b>2.</b> What do the following 2 alerts display (answer without running the code)?<br>
+               var myfunc = function(a, x) {<br>
+                &nbsp;&nbsp;return a * x;<br>
+               };<br>
+               var x = myfunc(2, 3);<br>
+               var y = myfunc;<br>
+               alert(x);<br>
+               alert(y(2,3));<br><br>
+        </div>
+        <div>
+            <b>Answer:</b>both will display 6 as a result.<br><br>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <div>
+            <b>3.</b>Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+            says “BOOYAH!”<br>
+            <br>
+            setTimeout(booyah1, 2000);<br>
+            setTimeout(booyah2(), 2000);<br><br>
+
+        </div>
+        <div>
+            <b>Answer:</b><br>
+            function booyah1(){<br>
+                &nbsp;&nbsp;alert("BOOYAH!");<br>
+            }<br><br>
+    
+            function booyah2(){<br>
+                &nbsp;&nbsp;return function(){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;alert("BOOYAH!");<br>
+                &nbsp;&nbsp;}<br>
+            }<br><br><br>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <div>
+            <b>4.</b>What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+            for using it)?<br><br>
+
+        </div>
+        <div>
+            <b>Answer:</b> A way to keep all JavaScript code, including event handlers, outside of the HTML when using dynamic HTML (DHTML). <br>
+            four benefits of unobtrusive DOM scripting:<br>
+            <ul>
+                <li><b>Usability:</b> An unobtrusive DOM script does not draw the attention of the user—"visitors just use it without thinking about it."</li>
+                <li><b>Graceful degradation:</b> Unobtrusive DOM scripts never generate error messages, in any browser, even when they fail. If features cannot be presented properly, they silently disappear.</li>
+                <li><b>Accessibility:</b> If any script fails, the page still delivers its core functions and information via the markup, stylesheets and/or server-side scripting.</li>
+                <li><b>Separation:</b> For the benefit of other and future web developers, all JavaScript code is maintained separately, without impacting other files of script, markup or code.</li>
+            </ul>
+        </div>
+    </div>
+<br>
+    <hr>
+<br><br><br>
+
+    
+</body>
+</html>
