@@ -1,0 +1,11 @@
+#deposit-section{
+    display: none;
+}
+
+#debit-section{
+    display: none;
+}
+
+.select-option-style{
+    width: 100px;
+}
