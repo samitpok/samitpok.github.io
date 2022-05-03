@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bankaccount.js"></script>
+    <style>
+        #deposit-section{
+            display: none;
+        }
+
+        #debit-section{
+            display: none;
+        }
+
+        .select-option-style{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Banking Account Application</h1><br><br><br>
+    
+    <div id="create-account-section">
+        
+        <label for="accountName" class="left-label">Account name:</label>
+        <input type="text" id="accountName" name="accountName" required><br><br>
+        <label for="deposit" class="left-label">Deposit:</label>
+        <input type="number" id="deposit" name="deposit" required><br><br>
+        <button id="createAccount">Create New Account</button><br><br>
+
+        <textarea rows="10" cols="50" id="textareacontent"></textarea><br><br><br>
+        <button id="depositAmount">Deposit</button>&nbsp;&nbsp;&nbsp;<button id="debit">Debit</button>
+
+    </div>
+
+    <div id="deposit-section">
+        <label for="deposit" class="left-label">Deposit:</label>
+        <input type="number" id="extraDeposit" name="extraDeposit" required><br><br>
+        <label for="acct_type" class="left-label">Account type:</label>
+        <select id="acct_type" class="select-option-style" required>        
+        </select><br><br>
+        <input type="submit" id="submitExtraDeposit"/>
+
+
+    </div>
+
+    <div id="debit-section">
+        <label for="debitAmount" class="left-label">Debit:</label>
+        <input type="number" id="debitAmount" name="debit" required><br><br>
+        <label for="acct_type_deb" class="left-label">Account type:</label>
+        <select id="acct_type_deb" class="select-option-style" required>        
+        </select><br><br>
+        <input type="submit" id="submitDebit"/>
+
+
+    </div>
+    
+    
+</body>
+</html>
