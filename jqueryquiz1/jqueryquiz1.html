@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Quiz I</title>
+</head>
+<body>
+
+    <h1>jQuery Quiz I</h1>
+    <hr>
+    <div>
+        <p>Q1. In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”? </p>
+        <p><b>Answer:</b> The dollar sign with the parentheses i.e $() is the shorter name of the jQuery function. This shortcut saves us from writing “jQuery()” every time we want to call the jQuery function. The jQuery function is also often referred to as the jQuery wrapper. This is the function that creates jQuery objects and registers handlers to be invoked when the DOM is ready; it also serves as the jQuery namespace. </p>
+
+        <p>A jQuery object is an object returned by the jQuery function. A jQuery object represents a set of document elements and can also be called a “jQuery result”, a “jQuery set”, or a “wrapped set”.</p>
+    </div>
+    <hr>
+    <div>
+        <p>Q2. Write jQuery code to find all h1 elements that are children of a div element and make their background color red.</p>
+        <p>
+            Sample HTML:<br>
+            &lt;body><br>
+            &lt;h1>abc&lt;/h1>&lt;br>&lt;div><br>
+            &lt;h1>div-1&lt;/h1><br>
+            &lt;h1>div-2&lt;/h1><br>
+            &lt;/div><br>
+            &lt;h1>xyz&lt;/h1><br>
+            &lt;/body><br>
+        </p>
+        <p><b>solution:</b>&nbsp;&nbsp;&nbsp;<a href="question2.html" target="_blank">Run Jquery</a><br>
+            &lt;script><br>
+            &nbsp;    $(document).ready(function() {<br>
+                &nbsp;&nbsp;  var headers  = $("div h1").each(function(){<br>
+                    
+                    &nbsp;&nbsp;&nbsp;$(this).css("background-color", "yellow");<br>
+                    
+                    &nbsp;&nbsp;});<br>
+                    &nbsp;});<br>
+                   
+                &lt;/script>
+
+        </p>
+    </div>
+    <hr>
+    <div>
+        <p>3. Use a jQuery method to insert the text "YES!" at the end of the &lt;p> element.</p>
+        <p>
+            &lt;!DOCTYPE html><br>
+            &lt;html><br>
+            &lt;head><br>
+            &lt;script><br>
+            &nbsp;$(document).ready(function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$('p').append('YES!');<br>
+                &nbsp;});<br>
+            &lt;/script><br>
+            &lt;/head><br>
+            &lt;body><br>
+            &lt;p>Is jQuery FUN or what? &lt;/p><br>
+            &lt;/body><br>
+            &lt;/html><br>
+        </p>
+        <p>Solution: &nbsp;&nbsp;&nbsp;<a href="question3.html" target="_blank">Run Jquery</a><br></p>
+    </div>
+    <hr>
+    <br><br><br><br><br>
+    
+</body>
+</html>
