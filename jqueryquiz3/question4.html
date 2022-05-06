@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+    <div id="menu_wrapper">
+        <div class="left_col">
+            <h4>Dinner Entrees</h4>
+            <ul class="menu_entrees">
+                <li>Thai-style Halibut
+                    <ul class="menu_list">
+                        <li>coconut milk</li>
+                        <li>pan-fried halibut</li>
+                        <li>early autumn vegetables</li>
+                        <li>Thai spices </li>
+                    </ul>
+                </li>
+                <li>House Grilled Panini
+                    <ul class="menu_list">
+                        <li class="turkey">Turkey</li>
+                        <li>provolone</li>
+                        <li>avocado</li>
+                        <li>sourdough roll</li>
+                    </ul>
+                </li>
+                <li>Southwest Slider
+                    <ul class="menu_list">
+                        <li class="turkey">turkey</li>
+                        <li>hamburger</li>
+                        <li>pepperjack cheese</li>
+                        <li>multigrain roll</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $("li.turkey").replaceWith("<li><em>Mashed Potatoes</em></li>");
+    </script>
+</body>
+
+</html>

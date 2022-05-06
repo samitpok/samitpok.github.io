@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>text demo</title>
+<style>
+p {
+color: blue;
+margin: 8px;
+}
+span {
+color: red;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+<body>
+<p><span>Test</span> Paragraph.</p>
+<p></p>
+<script>
+    let firstParaText = $( "p" ).first().text();
+    $( "p" ).last().html( firstParaText );
+</script>
+</body>
+</html>
