@@ -45,18 +45,12 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul><br>
                 &lt;/div><br>
                 &lt;script><br>
-                $(document).ready(function() {<br>
-                    &nbsp;&nbsp;&nbsp;var headers  = $("div ul li").each(function(){<br>
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$(this).css("color", "blue");<br>
-                    
-                        &nbsp;&nbsp;&nbsp;});<br>
-                });<br>
+                    &nbsp;&nbsp;&nbsp;$("div").has("ul").css("color","blue");<br>
                 &lt;/script><br>
                 &lt;/body><br>
         </p>
         <p>
-            <b>Solution:</b> <a href="question2.html">Run jQuery</a>
+            <b>Solution:</b> <a href="question2.html" target="_blank">Run jQuery</a>
         </p>
     </div>
 
@@ -69,12 +63,10 @@
         <p>&lt;div>&lt;h1>JQuery Core&lt;/h1>&lt;/div>&lt;/p> <br>
            
             &lt;script><br>
-            $(document).ready(function() {<br>
-               &nbsp;&nbsp;&nbsp; $('&lt;div>&lt;h1>JQuery Core&lt;/h1>&lt;/div>').appendTo('body');<br>
-            });<br>
+                &nbsp;&nbsp;&nbsp; $('body').append('&lt;div>&lt;h1>JQuery Core&lt;/h1>&lt;/div>');  <br>
             &lt;/script><br>
         <p>
-            <b>Solution:</b> <a href="question3.html">Run jQuery</a>
+            <b>Solution:</b> <a href="question3.html" target="_blank">Run jQuery</a>
         </p>    
 
     </div>
