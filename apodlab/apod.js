@@ -13,15 +13,28 @@ function getPicture() {
             date: $("#date").val()
         },
         dataType: "json",
-        "success": showPicture,
-        "error": noPicture
+        "success": showMedia,
+        "error": noMedia
     });
 };
-function showPicture(data) {
+function showMedia(data) {
     console.log("data",data);
-    $("#pic").attr("src", data.url);
-    $("#pic").attr("title",data.title)
+    
+    $("#media-title").text(data.title);
+    if(data.media_type == "video"){
+        $("#video")[0].src = data.url;
+        $("#video").show();
+        $("#pic").hide();
+    }else if(data.media_type == "image"){
+        $("#video").hide();
+        $("#pic").attr("src", data.url);
+        $("#pic").attr("title",data.title)
+        $("#pic").show();
+    }
+    
+    
 };
-function noPicture(error) {
+function noMedia(error) {
+    $("#media-title").text("");
     alert(error.responseText);
 };
